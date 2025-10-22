@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu proprio servidor.
+    </p>
+
+    <video src="midia/Meu-Video0.mp4" width="500" controls></video>
+
+    <!--A seguir, uma forma de como colocar para abrir em todos os navegadores-->
+    <video width="500" poster="midia/capa-video.jpg" controls autoplay loop >
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video0.mp4" type="video">
+        <!--Tem que converter os videos para cada navegador-->
+    </video>
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=ZdzlTSbz132Ci0t9" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
